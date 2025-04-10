@@ -1,0 +1,23 @@
+{
+    "name": "database-testing",
+    "version": "1.0.0",
+    "description": "Repository was created for database testing purposes (for example migration testing between two databases).\r This solution is based on using node.js library called node-mssql (that allows connect to MSSQL databases and download data from them, etc.), and Plawyright (by using soft assertions, thanks to which test won't be terminated after failing assertions).\r Thanks to that it will be easier to compare some datas before and after migration.\r Using library node-mssql is limited to having maximum one active connection to one database at the same time. It means that without disconnecting from first database, futher queries won't be sent to second database (because there will be try to use only existing connection that is active at the moment.)",
+    "main": "index.js",
+    "scripts": {},
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/michalsnakowski/database-testing.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@playwright/test": "^1.51.1",
+      "@types/node": "^22.13.10",
+      "dotenv": "16.4.7",
+      "mssql": "^11.0.1"
+    },
+    "bugs": {
+      "url": "https://github.com/michalsnakowski/database-testing/issues"
+    },
+    "homepage": "https://github.com/michalsnakowski/database-testing#readme"
+  }  
