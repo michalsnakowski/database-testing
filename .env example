@@ -1,0 +1,11 @@
+#settings for connection with database before migration
+DB_USERNAME_FIRST = username
+DB_PASSWORD_FIRST = password
+DB_SERVER_FIRST = localhost
+DB_NAME_FIRST = databaseName
+
+#settings for connection with database after migration
+DB_USERNAME_SECOND = username
+DB_PASSWORD_SECOND = password
+DB_SERVER_SECOND = localhost
+DB_NAME_SECOND = databaseName
