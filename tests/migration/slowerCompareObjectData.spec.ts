@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { getValueFromColumnAndCompare } from '../../helpers/migration-testing'
 
-test('Compare data for specific object from specific table', async ({}) => {
+test('Compare data for single object ID from specific table', async ({}) => {
     let commonColumns: string[] = [ //columns that exist in both databases (before and after migration)
         "Column A",
         "Column B",
