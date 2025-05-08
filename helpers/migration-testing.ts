@@ -86,7 +86,7 @@ export async function getAndCompareValuesFromColumns(columnList, tableName, colu
   console.log("\n ALL DOWNLOADED VALUES AFTER MIGRATION FOR OBJECT ID: " + valueInCondition, "\n")
   console.log(util.inspect(valuesListAfterMigration, { maxArrayLength: null }))
 
-  // close connection from v2 database (after migration)
+  // close connection from second database (after migration)
   await secondDatabaseConnection.close()
   console.log('Disconnected from the database: ' + configDatabase_AfterMigration.database);
   //soft assertion - comparing values for column list before and after migration
